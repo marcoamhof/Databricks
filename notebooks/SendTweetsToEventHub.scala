@@ -31,10 +31,6 @@ import twitter4j.conf.ConfigurationBuilder
 // Twitter configuration!
 // Replace values below with yours
 
-val twitterConsumerKey = "mwgJTYabMBsMjBU0NvrRFqUwZ"
-val twitterConsumerSecret = "pVR98eKTr2PMdR5adizfyGV8RNAeEbNuWYOdaVwlgtoAlho97C"
-val twitterOauthAccessToken = "4912497401-AxkbXHssMa45CzCRdI83pouFCAZaUE3wViGMSGL"
-val twitterOauthTokenSecret = "aiLXpYxxHGcZTedkpM9BY8nkITTToWStiK3xhTDumH6FA"
 
 val cb = new ConfigurationBuilder()
   cb.setDebugEnabled(true)
