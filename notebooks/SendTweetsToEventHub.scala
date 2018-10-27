@@ -51,6 +51,7 @@ val twitter = twitterFactory.getInstance()
 val query = new Query(" #blackfriday ")
 query.setCount(1000)
 query.lang("en")
+
 var finished = false
 while (!finished) {
   val result = twitter.search(query)
