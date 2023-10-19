@@ -1,0 +1,158 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: SalesOrderID
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: RevisionNumber
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: OrderDate
+    type: timestamp
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: DueDate
+    type: timestamp
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ShipDate
+    type: timestamp
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Status
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: OnlineOrderFlag
+    type: boolean
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: SalesOrderNumber
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: PurchaseOrderNumber
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: AccountNumber
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: CustomerID
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ShipToAddressID
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: BillToAddressID
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ShipMethod
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: CreditCardApprovalCode
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: SubTotal
+    type: decimal(19,4)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: TaxAmt
+    type: decimal(19,4)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Freight
+    type: decimal(19,4)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: TotalDue
+    type: decimal(19,4)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Comment
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: rowguid
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: ModifiedDate
+    type: timestamp
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

@@ -1,0 +1,1538 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "id" : "1",
+    "uri" : "pipelines/pipeline_0101",
+    "language" : "python",
+    "fabricId" : "6104",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "marcoamhofaccenturecomteam.pipeline01.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "marcoamhofaccenturecomteam.helloworld.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "2333",
+      "projectName" : "ProphecySamples",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : false,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pipeline_0101",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "lFVZ2OlXlxlfy_dLvLhJ9",
+    "source" : "UpRD9lhyzHjgJMELiqQnR$$9bE1fm2mPp0WBomZOCHE9",
+    "sourcePort" : "wPrFi8YlVElWtTRmnEX8L$$Ii68_wcU1QJjnILjIgoDZ",
+    "target" : "SBAfsezTL2b5THI333A8o$$Wd4Fq2_0PAzXbrQjZlMjP",
+    "targetPort" : "c_2fFLZguGT9d66CnF3uI$$02se-baOZ8wcHHpu9DjV5"
+  }, {
+    "id" : "AmlvWtTar059d5Gj0Jzrk",
+    "source" : "UV3sRQca-NVVJhFBxKLRb$$nDQFWACukgDgPfP5YlSqG",
+    "sourcePort" : "iIvRM7P7PgyT4JpgXPLrp$$LNxdVVMfcHGMdDc8pJdNt",
+    "target" : "SBAfsezTL2b5THI333A8o$$Wd4Fq2_0PAzXbrQjZlMjP",
+    "targetPort" : "ZWYPzmfUo7S3DOFg_v6NA$$hXUVyMbVx1EnkZEvQ05FQ"
+  }, {
+    "id" : "4YzMhbucpuHMpS3Udpfxt$$g5vs-OFbVwvj-hMGZ7tHe",
+    "source" : "SBAfsezTL2b5THI333A8o$$Wd4Fq2_0PAzXbrQjZlMjP",
+    "sourcePort" : "C6NePbdgzw39whcuo-ChD$$4gHR6_xkHt0Q8DMwH20_y",
+    "target" : "7bLCxncWqd8HdaIQfMjCr$$A5-NqmPKnRixxFApOsHcQ",
+    "targetPort" : "i9HU3VcO0flok2M4zMP_S$$U0kvwVIoCH1G3aCUjgF6W"
+  }, {
+    "id" : "Pp-oZxIyCyHAAzYgvVErr",
+    "source" : "7bLCxncWqd8HdaIQfMjCr$$A5-NqmPKnRixxFApOsHcQ",
+    "sourcePort" : "iYLNybO_hiKDbPp5RyW4J$$1lYGn6esjGeSAZTn5OkxP",
+    "target" : "FTYcMYWXdEfjL3HJ0hHoC$$39xXC7DKime1pV62FlMbR",
+    "targetPort" : "dRr9JlE8NgA6LcDt8WSGp$$XNcC06FVIaywsrqpcbN3-"
+  }, {
+    "id" : "zI0Jc1YiZUlnZmHNnkrLF$$Tt1F_YiQusKhFe5TFWv7w",
+    "source" : "FTYcMYWXdEfjL3HJ0hHoC$$39xXC7DKime1pV62FlMbR",
+    "sourcePort" : "AsVNZUyTlceLc7seid120$$PDmDvlvczA4rz2pXHvAVY",
+    "target" : "egeBdIXVBRoDxKiDpRU79$$DbJQZ0IqnYQxPvANCCcI5",
+    "targetPort" : "T0R5IAHQgchVXreT8iQUH$$iv6ZV3FbTk8KHSHemoULr"
+  }, {
+    "id" : "M4P9mkENuqGqSSYRH7I5H",
+    "source" : "UV3sRQca-NVVJhFBxKLRb$$nDQFWACukgDgPfP5YlSqG",
+    "sourcePort" : "iIvRM7P7PgyT4JpgXPLrp$$LNxdVVMfcHGMdDc8pJdNt",
+    "target" : "Wkuu_EZnzj5oO6abcWRcc$$n1HjvTcxRCf3Hm_FAyd8G",
+    "targetPort" : "P6DdgJrRTz5I5O5-g8jYV$$c4OUEaDXzazrvJIg3yX4a"
+  }, {
+    "id" : "0Yzime08Q-FpsbkSIeh_b$$65TpJzv_BO1loV6eaB0Rq",
+    "source" : "Wkuu_EZnzj5oO6abcWRcc$$n1HjvTcxRCf3Hm_FAyd8G",
+    "sourcePort" : "PmONTYFJCWtUozEpb1q2Y$$BDbd5b6VNvbgLd5PT0Ypx",
+    "target" : "T6BguW7oXiOjhKjrO_t29$$eGa0D0O-ixyAVxCx3WZIO",
+    "targetPort" : "WLGeuRndcQ6cOImRNzGiI$$w599nxfbcDvqGxkJ8KHIS"
+  }, {
+    "id" : "pVHDVzrYHc_e1bORdduWf",
+    "source" : "7bLCxncWqd8HdaIQfMjCr$$A5-NqmPKnRixxFApOsHcQ",
+    "sourcePort" : "iYLNybO_hiKDbPp5RyW4J$$1lYGn6esjGeSAZTn5OkxP",
+    "target" : "T6BguW7oXiOjhKjrO_t29$$eGa0D0O-ixyAVxCx3WZIO",
+    "targetPort" : "BsQb0wOwF2wO2JJzjzEim$$xCr25V3CrTvjgOB8fGNvj"
+  }, {
+    "id" : "HY-CP3Ea5PB9Swk67PUue$$5NcayVyUThmTEv9DZSLfo",
+    "source" : "T6BguW7oXiOjhKjrO_t29$$eGa0D0O-ixyAVxCx3WZIO",
+    "sourcePort" : "_Wp2ntyosnAbzMmUaNEY-$$58cOap3h-hDhOw55CKwFU",
+    "target" : "g6HJF8leFtqKXn_s8Skhk$$f_bHRVErhz24dxvrERHqH",
+    "targetPort" : "LzUOehhVI-QQA_6DqjNmH$$xUmlnFjrVX9TpaaPpwQkX"
+  }, {
+    "id" : "FZKE-wpXEDvSBUAz5ic4T",
+    "source" : "egeBdIXVBRoDxKiDpRU79$$DbJQZ0IqnYQxPvANCCcI5",
+    "sourcePort" : "_rELtmfBNSwTVBNvbHT4t$$KaC2rfKj7ScLJnlfjcL7y",
+    "target" : "y08eAWcOgJTwHC7RvLw5y$$F8Kq3zNEZXyKXS_cAjv28",
+    "targetPort" : "AzsmLqJppsYKQIpip_4rR$$MqxLjmo2oQACCwwusVEwY"
+  }, {
+    "id" : "6f2_DbDvjfl1yTiifkMWX",
+    "source" : "g6HJF8leFtqKXn_s8Skhk$$f_bHRVErhz24dxvrERHqH",
+    "sourcePort" : "Og22-N7qWohUZSWoZ1vue$$cY863Atfam4IA2rN1dTpJ",
+    "target" : "E7nwvgFh5VyX88j6HlBeM$$-qGPXQYj59YpiXZL3Wy5K",
+    "targetPort" : "KLUSLTdzKUIWLVi4hF5HI$$m2zhNmmIHUN2d3qzbWGcT"
+  } ],
+  "processes" : {
+    "7bLCxncWqd8HdaIQfMjCr$$A5-NqmPKnRixxFApOsHcQ" : {
+      "id" : "7bLCxncWqd8HdaIQfMjCr$$A5-NqmPKnRixxFApOsHcQ",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "turnover_by_customer",
+        "slug" : "turnover_by_customer",
+        "x" : 520,
+        "y" : 140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "i9HU3VcO0flok2M4zMP_S$$U0kvwVIoCH1G3aCUjgF6W",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Turnover",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "iYLNybO_hiKDbPp5RyW4J$$1lYGn6esjGeSAZTn5OkxP",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "Turnover",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "sum(Turnover)"
+          },
+          "description" : "",
+          "_row_id" : "c_36"
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ "i9HU3VcO0flok2M4zMP_S$$U0kvwVIoCH1G3aCUjgF6W##CustomerID", "i9HU3VcO0flok2M4zMP_S$$U0kvwVIoCH1G3aCUjgF6W##Turnover", "i9HU3VcO0flok2M4zMP_S$$U0kvwVIoCH1G3aCUjgF6W##CompanyName" ],
+        "groupBy" : [ {
+          "target" : "CustomerID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CustomerID  "
+          },
+          "description" : "",
+          "_row_id" : "c_38"
+        }, {
+          "target" : "CompanyName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CompanyName"
+          },
+          "description" : "",
+          "_row_id" : "c_49"
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "SBAfsezTL2b5THI333A8o$$Wd4Fq2_0PAzXbrQjZlMjP" : {
+      "id" : "SBAfsezTL2b5THI333A8o$$Wd4Fq2_0PAzXbrQjZlMjP",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "customer_order_join",
+        "slug" : "customer_order_join",
+        "x" : 320,
+        "y" : 140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "c_2fFLZguGT9d66CnF3uI$$02se-baOZ8wcHHpu9DjV5",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NameStyle",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Title",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "FirstName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "MiddleName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "LastName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Suffix",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SalesPerson",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmailAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PasswordHash",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PasswordSalt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "rowguid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ModifiedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "ZWYPzmfUo7S3DOFg_v6NA$$hXUVyMbVx1EnkZEvQ05FQ",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "SalesOrderID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RevisionNumber",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OrderDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DueDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShipDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OnlineOrderFlag",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SalesOrderNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PurchaseOrderNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShipToAddressID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillToAddressID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShipMethod",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreditCardApprovalCode",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SubTotal",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TaxAmt",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Freight",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TotalDue",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Comment",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "rowguid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ModifiedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "C6NePbdgzw39whcuo-ChD$$4gHR6_xkHt0Q8DMwH20_y",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CustomerID = in1.CustomerID"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "CustomerID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CustomerID"
+          },
+          "description" : "",
+          "_row_id" : "c_73"
+        }, {
+          "target" : "CompanyName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.CompanyName"
+          },
+          "description" : "",
+          "_row_id" : "c_74"
+        }, {
+          "target" : "Turnover",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.TotalDue"
+          },
+          "description" : "",
+          "_row_id" : "c_75"
+        } ],
+        "hints" : [ {
+          "id" : "c_2fFLZguGT9d66CnF3uI$$02se-baOZ8wcHHpu9DjV5",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "ZWYPzmfUo7S3DOFg_v6NA$$hXUVyMbVx1EnkZEvQ05FQ",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "ZWYPzmfUo7S3DOFg_v6NA$$hXUVyMbVx1EnkZEvQ05FQ##CustomerID", "c_2fFLZguGT9d66CnF3uI$$02se-baOZ8wcHHpu9DjV5##CustomerID", "ZWYPzmfUo7S3DOFg_v6NA$$hXUVyMbVx1EnkZEvQ05FQ##TotalDue", "c_2fFLZguGT9d66CnF3uI$$02se-baOZ8wcHHpu9DjV5##CompanyName", "c_2fFLZguGT9d66CnF3uI$$02se-baOZ8wcHHpu9DjV5##CustomerID" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "UpRD9lhyzHjgJMELiqQnR$$9bE1fm2mPp0WBomZOCHE9" : {
+      "id" : "UpRD9lhyzHjgJMELiqQnR$$9bE1fm2mPp0WBomZOCHE9",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "jdbc_customer",
+        "slug" : "jdbc_customer",
+        "x" : 120,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "This gem reads customer data from a SQL Server database using JDBC (Java Database Connectivity) and loads it into a Spark DataFrame. This allows for seamless integration of data from different sources and enables further analysis and processing using Spark."
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "wPrFi8YlVElWtTRmnEX8L$$Ii68_wcU1QJjnILjIgoDZ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/jdbc_customer"
+      }
+    },
+    "egeBdIXVBRoDxKiDpRU79$$DbJQZ0IqnYQxPvANCCcI5" : {
+      "id" : "egeBdIXVBRoDxKiDpRU79$$DbJQZ0IqnYQxPvANCCcI5",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformatted_turnover",
+        "slug" : "reformatted_turnover",
+        "x" : 920,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "T0R5IAHQgchVXreT8iQUH$$iv6ZV3FbTk8KHSHemoULr",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Turnover",
+              "type" : "decimal(29,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "_rELtmfBNSwTVBNvbHT4t$$KaC2rfKj7ScLJnlfjcL7y",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "CustomerID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CustomerID  "
+          },
+          "description" : ""
+        }, {
+          "target" : "CompanyName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CompanyName"
+          },
+          "description" : ""
+        }, {
+          "target" : "Turnover",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(Turnover AS decimal(18,2))"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "T0R5IAHQgchVXreT8iQUH$$iv6ZV3FbTk8KHSHemoULr##Turnover", "T0R5IAHQgchVXreT8iQUH$$iv6ZV3FbTk8KHSHemoULr##CompanyName", "T0R5IAHQgchVXreT8iQUH$$iv6ZV3FbTk8KHSHemoULr##CustomerID" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "Wkuu_EZnzj5oO6abcWRcc$$n1HjvTcxRCf3Hm_FAyd8G" : {
+      "id" : "Wkuu_EZnzj5oO6abcWRcc$$n1HjvTcxRCf3Hm_FAyd8G",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "total_due_sum",
+        "slug" : "total_due_sum",
+        "x" : 520,
+        "y" : 340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "P6DdgJrRTz5I5O5-g8jYV$$c4OUEaDXzazrvJIg3yX4a",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "SalesOrderID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "RevisionNumber",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OrderDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DueDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShipDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "OnlineOrderFlag",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SalesOrderNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "PurchaseOrderNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AccountNumber",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShipToAddressID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BillToAddressID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ShipMethod",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CreditCardApprovalCode",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SubTotal",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TaxAmt",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Freight",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TotalDue",
+              "type" : "decimal(19,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Comment",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "rowguid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ModifiedDate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "PmONTYFJCWtUozEpb1q2Y$$BDbd5b6VNvbgLd5PT0Ypx",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "PmONTYFJCWtUozEpb1q2Y$$BDbd5b6VNvbgLd5PT0Ypx",
+          "language" : "sql",
+          "content" : "SELECT SUM(TotalDue) AS TotalDueSum FROM in0"
+        } ],
+        "inputPortNames" : [ "in0" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/SQLStatement",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "y08eAWcOgJTwHC7RvLw5y$$F8Kq3zNEZXyKXS_cAjv28" : {
+      "id" : "y08eAWcOgJTwHC7RvLw5y$$F8Kq3zNEZXyKXS_cAjv28",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "jdbc_customer_report_extended",
+        "slug" : "jdbc_customer_report_extended",
+        "x" : 1120,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "AzsmLqJppsYKQIpip_4rR$$MqxLjmo2oQACCwwusVEwY",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Turnover",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/xlsOutput"
+      }
+    },
+    "FTYcMYWXdEfjL3HJ0hHoC$$39xXC7DKime1pV62FlMbR" : {
+      "id" : "FTYcMYWXdEfjL3HJ0hHoC$$39xXC7DKime1pV62FlMbR",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "by_turnover_desc",
+        "slug" : "by_turnover_desc",
+        "x" : 720,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "dRr9JlE8NgA6LcDt8WSGp$$XNcC06FVIaywsrqpcbN3-",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Turnover",
+              "type" : "decimal(29,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "AsVNZUyTlceLc7seid120$$PDmDvlvczA4rz2pXHvAVY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "dRr9JlE8NgA6LcDt8WSGp$$XNcC06FVIaywsrqpcbN3-##Turnover" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Turnover"
+          },
+          "sortType" : "desc"
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/OrderBy",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "E7nwvgFh5VyX88j6HlBeM$$-qGPXQYj59YpiXZL3Wy5K" : {
+      "id" : "E7nwvgFh5VyX88j6HlBeM$$-qGPXQYj59YpiXZL3Wy5K",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "jdbc_output_customer_report_extended",
+        "slug" : "jdbc_output_customer_report_extended",
+        "x" : 1120,
+        "y" : 340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "KLUSLTdzKUIWLVi4hF5HI$$m2zhNmmIHUN2d3qzbWGcT",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Turnover",
+              "type" : "decimal(29,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TurnoverPct",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/xlsOutput"
+      }
+    },
+    "g6HJF8leFtqKXn_s8Skhk$$f_bHRVErhz24dxvrERHqH" : {
+      "id" : "g6HJF8leFtqKXn_s8Skhk$$f_bHRVErhz24dxvrERHqH",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "customer_turnover_percentage",
+        "slug" : "customer_turnover_percentage",
+        "x" : 920,
+        "y" : 340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "LzUOehhVI-QQA_6DqjNmH$$xUmlnFjrVX9TpaaPpwQkX",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "TotalDueSum",
+              "type" : "decimal(29,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Turnover",
+              "type" : "decimal(29,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "Og22-N7qWohUZSWoZ1vue$$cY863Atfam4IA2rN1dTpJ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "CustomerID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CustomerID"
+          },
+          "description" : ""
+        }, {
+          "target" : "CompanyName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "CompanyName"
+          },
+          "description" : ""
+        }, {
+          "target" : "Turnover",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Turnover"
+          },
+          "description" : ""
+        }, {
+          "target" : "TurnoverPct",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(Turnover / TotalDueSum * 100 AS decimal(18,2))"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "LzUOehhVI-QQA_6DqjNmH$$xUmlnFjrVX9TpaaPpwQkX##Turnover", "LzUOehhVI-QQA_6DqjNmH$$xUmlnFjrVX9TpaaPpwQkX##CompanyName", "LzUOehhVI-QQA_6DqjNmH$$xUmlnFjrVX9TpaaPpwQkX##TotalDueSum", "LzUOehhVI-QQA_6DqjNmH$$xUmlnFjrVX9TpaaPpwQkX##CustomerID" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "T6BguW7oXiOjhKjrO_t29$$eGa0D0O-ixyAVxCx3WZIO" : {
+      "id" : "T6BguW7oXiOjhKjrO_t29$$eGa0D0O-ixyAVxCx3WZIO",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "join_all",
+        "slug" : "join_all",
+        "x" : 720,
+        "y" : 340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WLGeuRndcQ6cOImRNzGiI$$w599nxfbcDvqGxkJ8KHIS",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "TotalDueSum",
+              "type" : "decimal(29,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "BsQb0wOwF2wO2JJzjzEim$$xCr25V3CrTvjgOB8fGNvj",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "CompanyName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Turnover",
+              "type" : "decimal(29,4)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "_Wp2ntyosnAbzMmUaNEY-$$58cOap3h-hDhOw55CKwFU",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "1 = 1"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ ],
+        "hints" : [ {
+          "id" : "WLGeuRndcQ6cOImRNzGiI$$w599nxfbcDvqGxkJ8KHIS",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "BsQb0wOwF2wO2JJzjzEim$$xCr25V3CrTvjgOB8fGNvj",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.0.5&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "UV3sRQca-NVVJhFBxKLRb$$nDQFWACukgDgPfP5YlSqG" : {
+      "id" : "UV3sRQca-NVVJhFBxKLRb$$nDQFWACukgDgPfP5YlSqG",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "jdbc_salesorderheader",
+        "slug" : "jdbc_salesorderheader",
+        "x" : 120,
+        "y" : 340,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "iIvRM7P7PgyT4JpgXPLrp$$LNxdVVMfcHGMdDc8pJdNt",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/jdbc_salesorderheader"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.UpRD9lhyzHjgJMELiqQnR$$9bE1fm2mPp0WBomZOCHE9.properties.textPassword",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "Storing plain-text passwords poses a security risk and is not recommended.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.UV3sRQca-NVVJhFBxKLRb$$nDQFWACukgDgPfP5YlSqG.properties.textPassword",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "Storing plain-text passwords poses a security risk and is not recommended.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.y08eAWcOgJTwHC7RvLw5y$$F8Kq3zNEZXyKXS_cAjv28.properties.textPassword",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "Storing plain-text passwords poses a security risk and is not recommended.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.E7nwvgFh5VyX88j6HlBeM$$-qGPXQYj59YpiXZL3Wy5K.properties.textPassword",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 2,
+    "message" : "Storing plain-text passwords poses a security risk and is not recommended.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}

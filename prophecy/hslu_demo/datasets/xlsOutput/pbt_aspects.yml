@@ -1,0 +1,32 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: CustomerID
+    type: integer
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: CompanyName
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: Turnover
+    type: decimal(29,4)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: TurnoverPct
+    type: decimal(18,2)
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
